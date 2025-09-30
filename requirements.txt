@@ -1,0 +1,16 @@
+# Core ML dependencies
+tensorflow==2.15.0
+numpy==1.24.3
+pillow==10.1.0
+
+# For Jupyter notebooks
+jupyter==1.0.0
+matplotlib==3.7.2
+seaborn==0.12.2
+
+# Optional: For all applications
+fastapi==0.104.1
+uvicorn==0.24.0
+streamlit==1.28.0
+pydantic==2.5.0
+python-multipart==0.0.6

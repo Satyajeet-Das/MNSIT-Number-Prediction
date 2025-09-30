@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MNIST Digit Predictor - AI Neural Network</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-content">
+          <div class="logo">
+            <i class="fas fa-brain"></i>
+            <h1>MNIST Digit Predictor</h1>
+          </div>
+          <p class="subtitle">Draw a digit and let AI predict what number it is!</p>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <div class="canvas-section">
+          <div class="canvas-container">
+            <canvas id="canvas" width="280" height="280"></canvas>
+            <div class="canvas-overlay">
+              <i class="fas fa-pencil-alt"></i>
+              <span>Draw a digit here</span>
+            </div>
+          </div>
+          
+          <div class="controls">
+            <button type="button" id="predict-btn" class="btn btn-primary">
+              <i class="fas fa-magic"></i>
+              Predict Number
+            </button>
+            <button type="button" id="clear-btn" class="btn btn-secondary">
+              <i class="fas fa-eraser"></i>
+              Clear Canvas
+            </button>
+          </div>
+        </div>
+
+        <div class="result-section">
+          <div id="result" class="result-card">
+            <div class="result-placeholder">
+              <i class="fas fa-robot"></i>
+              <span>Draw a digit and click "Predict Number" to see the AI's prediction!</span>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p>Powered by Neural Networks & TensorFlow</p>
+      </footer>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
